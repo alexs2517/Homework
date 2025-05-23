@@ -1,0 +1,39 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #e0d5c5;
+}
+
+/* ======================================================== */
+
+.block {
+    /* border: 10px groove #94e7a0;
+    border-top: 15px double #000;
+
+    border-width: 10px;
+    border-style: dotted;
+    background-color:  #ee8181;
+
+    border-bottom-color: #7700ff; */
+
+    /* border-radius: 30px 0 0 0 ; */
+
+    outline: 10px groove #94e7a0;
+}
+
+
+.inline {
+    /* border на inline это ерунда! работает не коректро! */
+}
+
+.img {
+    border: 10px solid #00ff26;
+    border-radius: 30px;
+}
