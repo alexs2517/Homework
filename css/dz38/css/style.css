@@ -1,0 +1,41 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #e0d5c5;
+}
+
+/* ======================================================== */
+
+.block {
+    /* padding: 50px; */
+    /* padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; */
+    /* padding: 30px 60px 10px 100px; */
+    /* padding: 30px 60px 10px; */
+    /* padding: 30px 60px; */
+    padding: 30px;
+}
+
+.block-1 {    
+    margin: 0 0 50px 0;
+}
+.block-2 {    
+    margin-top: 100px;
+}
+
+.inline {
+    /* padding - НЕТ!!!! margie - чтото меняется но не нужно это всё! */
+}
+
+.img {
+    /* тут  padding и margin пременяются по другому */
+}
