@@ -5,9 +5,9 @@ body {
 /* ======================================================== */
 
 .block {
-    width: 1000px;
-    height: 100px;
-    background: rgb(129, 129, 129);
+    /* width: 1000px;
+    height: 100px; */
+    background: rgb(218, 217, 217);
 
     max-width: 1000px;
     min-width: 800px;
