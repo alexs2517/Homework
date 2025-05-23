@@ -1,0 +1,28 @@
+.block1 {
+    background: rgb(228, 228, 228);
+    overflow: auto;
+    width: 1200px;
+    height: 500px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.block2 {
+    background: rgb(199, 181, 150);
+    width: 220px;
+    height: 170px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 4px 2px 4px 5px rgba(0,0,0,0.1) inset;
+    display: inline-block;
+    
+}
+
+.block2 h2 {
+    margin: 15px;
+}
+
+.block2 p {
+    margin: 15px;
+}
