@@ -1,0 +1,31 @@
+
+body {
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 4em;
+}
+
+.block.green {
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+    min-height: 100px;
+    background-color: rgb(86, 255, 86);
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    top: -50px;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
