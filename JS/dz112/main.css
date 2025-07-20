@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -21,7 +21,7 @@
 }
 
 .modal {
-    display: none; /* Скрываем по умолчанию */
+    display: none;
     position: fixed;
     inset: 0;
     z-index: 2;
@@ -35,7 +35,7 @@
 }
 
 .modal--open {
-    display: flex; /* Показываем при активном классе */
+    display: flex; 
     opacity: 1;
     visibility: visible
 }
@@ -60,4 +60,110 @@
     background: none;
     border: none;
     cursor: pointer;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 200vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.body--fixed {
+    overflow-y: hidden;
+}
+
+.btn-open {
+    width: 320px;
+    height: 55px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-open:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    box-shadow: 0 12px 20px rgba(118, 75, 162, 0.5);
+}
+
+.modal {
+    display: none; /* Скрываем по умолчанию */
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal--open {
+    display: flex; /* Показываем при активном классе */
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__window {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    min-height: 200px;
+    padding: 30px 30px 40px 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    animation: modalFadeIn 0.3s ease forwards;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal__close-btn:hover {
+    background: #d32f2f;
+    transform: scale(1.1);
 }
