@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Финальный БОСС Wake & Bake</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,16 +21,24 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">Программа обучения</a>
+                                    <a class="nav__link" href="#">
+                                        Программа обучения
+                                    </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">Галерея</a>
+                                    <a class="nav__link" href="#">
+                                        Галерея
+                                    </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">Отзывы</a>
+                                    <a class="nav__link" href="#">
+                                        Отзывы
+                                    </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">Контакты</a>
+                                    <a class="nav__link" href="#">
+                                        Контакты
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
@@ -56,7 +63,7 @@
                                 За 8 практических занятий ты получишь новые возможности для самореализации и любимое
                                 дело
                             </p>
-                            <div class="hero__img-control hero__img-control--mobile">
+                            <div class="hero__img-conrol hero__img-conrol--mobile">
                                 <a class="hero__img-button" data-fslightbox href="video/cake.mp4">
                                     <img src="img/icons/play.svg" alt="">
                                 </a>
@@ -68,7 +75,7 @@
                         </div>
                         <div class="hero__img">
                             <img src="img/content/girl.png" alt="Девушка с тортом в руках">
-                            <div class="hero__img-control">
+                            <div class="hero__img-conrol">
                                 <a class="hero__img-button" data-fslightbox="video" href="video/cake.mp4">
                                     <img src="img/icons/play.svg" alt="">
                                 </a>
@@ -85,8 +92,8 @@
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__img">
-                            <img src="img/content/girl-2.jpeg" alt="Девушка с тортом в руках">
-                            <div class="about__img-control">
+                            <img src="img/content/girl-2.jpg" alt="Девушка с тортом в руках">
+                            <div class="about__img-conrol">
                                 <a class="about__img-button" href="#">
                                     <img src="img/icons/gift.svg" alt="">
                                 </a>
@@ -146,7 +153,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="main__program program">
                 <div class="container">
                     <h2 class="program__title title">
                         Программа обучения
@@ -712,6 +719,78 @@
                 </div>
             </section>
 
+            <section class="main__gallery gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="img/decor/cupcakes.png" alt="">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h2 class="gallery__title title">
+                                    Фотогалерея
+                                </h2>
+                                <p class="gallery__text">
+                                    Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                                    всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры
+                                    под присмотром опытных наставников
+                                </p>
+                            </div>
+                            <div class="gallery__nav">
+                                <button class="gallery__prev" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.992 1.00777L2.016 6.98377L7.992 12.9598L6.984 13.9678L-3.0528e-07 6.98377L6.984 -0.000227365L7.992 1.00777Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M1.0083 7.70312L1.0083 6.26313L13.2483 6.26312L13.2483 7.70312L1.0083 7.70312Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.25653 12.96L11.2325 6.984L5.25654 1.008L6.26454 -3.0528e-07L13.2485 6.984L6.26454 13.968L5.25653 12.96Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__wrapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/1.jpg">
+                                <img src="img/content/gallery/1.jpg" alt="Девушка кондитер">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/2.jpg">
+                                <img src="img/content/gallery/2.jpg" alt="Студентка на практиктике у кондитера">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="Организатор данного курса">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="Готовят самый вкусный торт">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="Организатор данного курса">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="Готовят самый вкусный торт">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="Организатор данного курса">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
         <footer class="footer">
             <div class="container">
@@ -811,7 +890,6 @@
             </div>
         </footer>
     </div>
-
     <div class="modal">
         <div class="modal__window">
             <a class="modal__cancel" href="#">
@@ -841,8 +919,9 @@
         </div>
     </div>
 
-    <script src="js/fslightbox.js"></script> <!-- важно скрипты подключать в конце -->
+    <script src="js/fslightbox.js"></script><!-- важно скрипты подключать в конце -->
     <!-- ТУТ ОЧЕНЬ ВАЖЕН ПОРЯДОК ПОДКЛЮЧЕНИЯ! -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
