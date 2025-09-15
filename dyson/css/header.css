@@ -1,0 +1,66 @@
+.header {
+    height: 90px;
+    background: var(--header_footer-bg);
+    color: var(--header_footer-text);
+}
+
+.header__top {
+    padding-top: 6px;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.burger-icon {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s; /* Добавлено для плавности */
+}
+
+.burger-icon:hover img {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(270deg) brightness(1.2); /* Примерный filter для изменения цвета на #C5358C */
+}
+
+.header__logo {
+    max-width: 183px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav {}
+
+.nav__list {
+    font-family: 'NAMU Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav__item {
+    /* font-family: 'Open Sans'; */
+}
+
+.nav__link {
+    transition: color 0.3s; /* Добавлено для плавности */
+}
+
+.nav__link:hover {
+    color: #C5358C;
+}
+
+.basket {
+    margin-left: auto;
+    transition: 0.3s; /* Добавлено для плавности */
+}
+
+.basket:hover img {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(270deg) brightness(1.2);/* Примерный filter для изменения цвета на #C5358C */
+}
