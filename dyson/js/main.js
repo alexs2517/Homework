@@ -1,6 +1,29 @@
 
 // диплом
 
+// БУРГЕР МЕНЮ
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    const body = document.body;
+
+    burger.addEventListener('click', (e) => {
+        e.preventDefault();
+        nav.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+
+    // Опционально: закрыть меню при клике вне nav
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !burger.contains(e.target)) {
+            nav.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+    });
+});
+
+
 // ПОКАЗАТЬ ЕЩЕ
 
 document.addEventListener('DOMContentLoaded', function () {
